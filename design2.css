@@ -16,11 +16,15 @@ body {
 header {
     background-color: #E899FF;
     color: white;
-    padding: 3px;
+    padding: 10px 0;
     font-family: sans-serif;
     font-size: 20px;
     font-weight: bold;
-    opacity: 71.5%;
+    text-align: center;
+    position: fixed;
+    top: 0; /* Position it at the top */
+    width: 100%; /* Make it span the full width */
+    z-index: 1000; /* Ensure it stays above other elements */
     line-height: 0;
 }
 nav {
@@ -55,8 +59,81 @@ nav ul li a:hover {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     border-radius: 1px;
 }
+main {
+    margin: 0;
+    padding: 0;
+}
+section {
+    margin: 10px 0;
+    max-width: 100%;
+    padding: 40px;
+    margin-bottom: 40px;
+}
 
+.hero {
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+  } 
 
+  .hero img {
+    margin-top: 20px;
+    width: 270px;
+    height: 270px;
+    border: 5px solid;
+    margin-right: 60px
+    animation: fadeInLeft 1.5s ease-in-out;
+  }
+
+.about {
+    font-family: sans-serif;
+    font-size: 2rem;
+    color: black;
+    margin-top: 40px;
+    text-align: left;
+    line-height: 1.5;
+    
+  }
+
+section h1 {
+    text-decoration: underline;
+    text-align: left; /* Ensures the text is left-aligned */ 
+}
+
+.hero-content {
+    text-align: left; /* Aligns the text inside the hero content to the left */
+    margin-left: 20px; /* Optional: Adds spacing from the left */
+}
+
+section h3 {
+    font-family: sans-serif;
+    font-weight: normal; /* Removes bold styling */
+    text-align: left; /* Ensures the text is left-aligned */ 
+    line-height: 1.5;/* Improves readability with proper line spacing */
+}
+
+button {
+        background-color: transparent;
+        color: black;
+        border: 1px solid black;
+        border: after 1px solid white;
+        border-radius: 20px; /* Rounded corners */
+        padding: 10px 20px; /* Add padding for size */
+        font-size: 16px; /* Font size */
+        font-family: sans-serif; /* Font style */
+        font-weight: bold; /* Bold text */
+        cursor: pointer; /* Change cursor to pointer on hover */
+        transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+       
+    }
+
+    button:hover {
+        background-color: white; /* Change background color on hover */
+        color: #E899FF; /* Change text color on hover */
+        transform: scale(1.1); /* Slightly enlarge the button */
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); /* Add a deeper shadow */
+    }
+    
 
 
 
@@ -68,9 +145,11 @@ nav ul li a:hover {
 footer {
     color: white;
     text-align: center;
-    padding: 1px 0;
-    position: relative; /* Keeps the footer at the bottom of the page */
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
     width: 100%;
     font-family: sans-serif;
     font-size: 14px;
+    z-index: 1000; /* Ensure it stays above other elements */
 }

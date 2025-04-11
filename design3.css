@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%; 
+    text-align: center;
+	background-image: url('estetik.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center bottom;
+    overflow-y: auto; 
+    display: flex; /* This splits the body horizontally */
+    
+}
+header {
+    background-color: #E899FF;
+    color: white;
+    padding: 10px 0;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    position: fixed;
+    top: 0; /* Position it at the top */
+    width: 100%; /* Make it span the full width */
+    z-index: 1000; /* Ensure it stays above other elements */
+    line-height: 0;
+}
+nav {
+    background-color: #E899FF;
+    opacity: 0.8;
+    padding: 6px;
+    font-family: serif;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 10px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 12px; 
+    display: inline-block;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+nav ul li a:hover {
+    transform: scale(1.1);
+    color: black;
+    text-decoration: underline;
+    padding: 5px 12px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 1px;
+}
+
+/* Container for the columns */
+section .columns-container {
+    display: flex; /* Enables Flexbox */
+    flex-wrap: wrap; /* Allows columns to wrap to the next row if needed */
+    justify-content: space-between; /* Adds space between columns */
+    gap: 20px; /* Adds space between columns */
+    padding: 20px; /* Adds padding around the container */
+}
+
+/* Individual columns */
+.column, .column1 {
+    flex: 1 1 calc(25% - 20px); /* Each column takes up 25% of the width minus the gap */
+    color: black; /* Text color */
+    padding: 15px; /* Adds padding inside each column */
+    border-radius: 10px; /* Adds rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+    min-width: 250px; /* Ensures columns don't shrink too small */
+    margin-top: 70px;
+}
+
+/* Headings inside columns */
+.column h1, .column1 h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-align: center; /* Center-align the headings */
+ 
+}
+
+/* Paragraphs inside columns */
+.column p, .column1 p {
+    font-size: 17px;
+    line-height: 1.8; /* Improves readability */
+    margin-bottom: 10px;
+    font-family: sans-serif;
+}
+
+.column1 {
+    margin-bottom: 5px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 14px;
+    z-index: 1000; /* Ensure it stays above other elements */
+}
+button {
+    background-color: #E899FF; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding inside the button */
+    text-align: center; /* Center text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Inline-block display */
+    font-size: 16px; /* Font size */
+    margin: 10px 2px; /* Margin around the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.button-control {
+    justify-self: end;
+    margin-right: 20px;
+}
