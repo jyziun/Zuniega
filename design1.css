@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%; 
+    text-align: center;
+	background-image: url("estetik.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center bottom;
+    overflow-y: auto; 
+    display: flex; /* This splits the body horizontally */
+    
+}
+
+header {
+    background-color: #E899FF;
+    color: white;
+    padding: 3px;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 71.5%;
+    line-height: 0;
+}
+nav {
+    background-color: #E899FF;
+    padding: 6px;
+    font-family: serif;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 10px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 12px; 
+    display: inline-block;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+nav ul li a:hover {
+    transform: scale(1.1);
+    color: black;
+    text-decoration: underline;
+    padding: 5px 12px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 1px;
+}
+
+section {
+    margin: 10px 0;
+    max-width: 100%;
+    padding: 40px;
+}
+
+/* Section container */
+#pictures {
+    display: flex; /* Enables Flexbox for the section */
+    justify-content: space-between; /* Space between the two parts */
+    align-items: flex-start; /* Align items to the top */
+    padding: 20px; /* Add padding for spacing */
+    margin-left: 50px; /* Adjust the value as needed */
+}
+
+    /* Flexbox container for images */
+    .box-container {
+        display: flex; /* Enables Flexbox */
+        flex-wrap: wrap; /* Allows items to wrap to the next row if needed */
+        justify-content: center; /* Centers the items horizontally */
+        gap: 10px; /* Adds space between items */
+        margin: -13px auto; /* Centers the container and adds spacing */
+        padding: 0; /* Optional: Adds padding inside the container */
+        width: 50%; /* Takes up half the section width */
+        margin: 0; /* Adjust the value as needed */
+
+    }
+    
+    /* Figure styling */
+    figure {
+        margin: 0; /* Remove extra margin ,, */    
+        display: inline-block;
+        padding: 15px; /* Adds space inside the figure */
+        background-color: rgb(255, 255, 255); /* Adds a white background to the figure */
+        border-radius: 10px; /* Rounds the corners of the figure */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+        width: 200px; /* Sets a fixed width for each figure */
+        text-align: center; /* Centers the content inside the figure */
+    }
+    
+    /* Image styling */
+    figure img {
+    max-width: 300px;
+        height: 200px;
+        border-radius: 5px;
+        display: block;
+        margin: 0 auto; /* Centers the image inside the figure */
+    
+    }
+
+    /* Right side: Text */
+    .text-container {
+    display: flex;
+    flex-wrap: wrap
+    width: 50%; /* Takes up half the section width */
+    text-align: left; /* Align text to the left */
+    padding-left: 20px; /* Add spacing between text and figures */
+    justify-content: flex-start;
+    margin: 50px; /* Adjust the value as needed */
+    flex-direction: column;
+
+    }
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 1px 0;
+    position: relative; /* Keeps the footer at the bottom of the page */
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 14px;
+}
